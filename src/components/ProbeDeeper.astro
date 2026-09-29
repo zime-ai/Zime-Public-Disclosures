@@ -1,0 +1,20 @@
+---
+// 3 to 5 audience-specific inquiry paths (Report, "AI inquiry prompts").
+import InquiryPrompt from './InquiryPrompt.astro';
+import { personaPrompt } from '../utils/prompts';
+
+interface Props {
+	promptSets: { persona: string; prompt?: string }[];
+	basePrompt: string;
+}
+const { promptSets, basePrompt } = Astro.props;
+---
+
+{promptSets.length > 0 && (
+	<section class="pd-probe" aria-labelledby="pd-probe-h">
+		<h2 id="pd-probe-h">Probe Deeper</h2>
+		{promptSets.slice(0, 5).map((p) => (
+			<InquiryPrompt label={p.persona.replace(/_/g, ' ')} prompt={personaPrompt(p.persona, basePrompt, p.prompt)} />
+		))}
+	</section>
+)}

@@ -1,0 +1,38 @@
+---
+// Declaring party, status, version, dates, type and canonical link (Hand-Off Kit §6).
+import type { Artifact } from '../utils/content';
+import { formatDate } from '../utils/content';
+
+interface Props {
+	entry: Artifact;
+}
+const { entry } = Astro.props;
+const d = entry.data;
+const url = Astro.site ? new URL(d.canonical_path, Astro.site).toString() : d.canonical_path;
+const notice: Record<string, string> = {
+	draft: 'Draft. Not an approved public disclosure.',
+	under_review: 'Under review. Not an approved public disclosure.',
+	approved: 'Approved, not yet published.',
+	staged: 'Staged for publication.',
+	amended: 'This record has been amended. See the version history below.',
+	superseded: 'This record has been superseded. See the version history below.',
+	withdrawn: 'This record has been withdrawn. It is preserved for the public record.',
+};
+---
+
+{notice[d.status] && <p class="pd-status-banner" data-status={d.status}>{notice[d.status]}</p>}
+<dl class="pd-meta">
+	{d.declaring_party && (<><dt>Declaring party</dt><dd>{d.declaring_party.name}</dd></>)}
+	<dt>Type</dt>
+	<dd>{d.artifact_type.replace(/_/g, ' ')}{'subtype' in d && d.subtype ? ` · ${String(d.subtype).replace(/_/g, ' ')}` : ''}</dd>
+	<dt>ID</dt><dd><code>{d.id}</code></dd>
+	<dt>Status</dt><dd>{d.status.replace(/_/g, ' ')}</dd>
+	<dt>Version</dt><dd>{d.version}</dd>
+	<dt>Published</dt><dd>{formatDate(d.publication_date)}</dd>
+	<dt>Updated</dt><dd>{formatDate(d.updated_date)}</dd>
+	{d.effective_date && (<><dt>Effective</dt><dd>{formatDate(d.effective_date)}</dd></>)}
+	<dt>Canonical URL</dt><dd><a href={d.canonical_path}>{url}</a></dd>
+</dl>
+{'commercial_interest' in d && d.commercial_interest && (
+	<p class="pd-interest"><strong>Declared interest:</strong> {d.commercial_interest}</p>
+)}

@@ -1,0 +1,25 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getArtifacts, formatDate } from '../utils/content';
+
+const latest = (await getArtifacts('disclosures')).slice(0, 10);
+---
+
+<StarlightPage
+	frontmatter={{
+		title: 'Zime Public Disclosures',
+		description: 'News, releases, research, reference materials, and ways to examine what we are building and why it matters.',
+	}}
+>
+	<p>News, releases, research, reference materials, and ways to examine what we are building and why it matters.</p>
+	<p class="pd-small">Structured for human inquiry, public accountability, and AI-mediated verification. <a href="/start-here/">Start here</a>.</p>
+	<h2>Latest disclosures</h2>
+	{latest.length === 0 ? <p class="pd-small">No disclosures published yet.</p> : (
+		<ul class="pd-index">
+			{latest.map((e) => (
+				<li><a href={e.data.canonical_path}>{e.data.title}</a> <span class="pd-small">· {formatDate(e.data.publication_date)}</span></li>
+			))}
+		</ul>
+	)}
+	<p><a href="/rss.xml">RSS feed</a> · <a href="/inquiry/">Inquiry</a> · <a href="/corrections/">Corrections</a></p>
+</StarlightPage>

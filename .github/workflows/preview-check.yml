@@ -1,0 +1,24 @@
+# Runs when Vercel reports a successful deployment (preview or production) and checks
+# that the core public routes respond. Does nothing until the Vercel Git integration is on.
+name: Preview check
+on:
+  deployment_status:
+
+jobs:
+  smoke:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check core routes
+        env:
+          BASE: ${{ github.event.deployment_status.environment_url }}
+        run: |
+          set -e
+          for path in / /start-here/ /disclosures/ /credentials/ /concepts/glossary/ /inquiry/ /corrections/ /rss.xml /publication-manifest.json; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$BASE$path")
+            echo "$code $path"
+            if [ "$code" -ge 400 ]; then
+              if [ "$code" = 401 ] || [ "$code" = 403 ]; then echo "Preview is protected; skipping remaining checks."; exit 0; fi
+              exit 1
+            fi
+          done

@@ -1,0 +1,19 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+const issues = 'https://github.com/zime-ai/Zime-Public-Disclosures/issues/new';
+---
+
+<StarlightPage frontmatter={{ title: 'Corrections', description: 'How Zime corrects, amends, supersedes and withdraws public disclosures.' }}>
+	<h2>Report an error</h2>
+	<p><a href={`${issues}?labels=correction&title=Correction:%20`}>Report a correction on GitHub</a>. Include the artifact ID, version, the statement in question, and the correct information with a source if you have one.</p>
+	<h2>How corrections work</h2>
+	<ul>
+		<li>Material public facts are never silently overwritten.</li>
+		<li>A correction or amendment is published as its own record and linked from the affected artifact.</li>
+		<li>Earlier versions stay reachable through git history and the artifact's version history.</li>
+		<li>Superseded artifacts link to their successor, and the successor links back.</li>
+		<li>Withdrawn artifacts stay in the record with an explanation where it is legally and ethically appropriate.</li>
+	</ul>
+	<p><a href="/amendments/">See all amendments</a></p>
+</StarlightPage>

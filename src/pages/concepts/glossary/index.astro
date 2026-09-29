@@ -1,0 +1,8 @@
+---
+import ArtifactIndex from '../../../components/ArtifactIndex.astro';
+import { getArtifacts } from '../../../utils/content';
+
+const entries = (await getArtifacts('concepts')).filter((e) => e.data.concept_type === 'glossary');
+---
+
+<ArtifactIndex title="Glossary" intro="Stable definitions of the terms used across Zime Public Disclosures." entries={entries} />

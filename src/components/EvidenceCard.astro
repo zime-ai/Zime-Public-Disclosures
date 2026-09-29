@@ -1,0 +1,21 @@
+---
+interface Props {
+	source: string;
+	href?: string;
+	date?: string;
+	relevance?: string;
+	access?: 'public' | 'on_request' | 'restricted';
+	caveat?: string;
+}
+const { source, href, date, relevance, access = 'public', caveat } = Astro.props;
+---
+
+<article class="pd-evidence">
+	<h3>{href ? <a href={href}>{source}</a> : source}</h3>
+	<dl>
+		{date && (<><dt>Date</dt><dd>{date}</dd></>)}
+		{relevance && (<><dt>Relevance</dt><dd>{relevance}</dd></>)}
+		<dt>Access</dt><dd>{access.replace(/_/g, ' ')}</dd>
+		{caveat && (<><dt>Caveat</dt><dd>{caveat}</dd></>)}
+	</dl>
+</article>

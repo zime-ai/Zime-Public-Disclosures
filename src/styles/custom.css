@@ -1,0 +1,15 @@
+/* Zime Public Disclosures: small additions on top of Starlight's defaults. */
+.pd-summary { font-size: var(--sl-text-lg); }
+.pd-small { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+.pd-meta { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; font-size: var(--sl-text-sm); }
+.pd-meta dt { font-weight: 600; }
+.pd-meta dd { margin: 0; }
+.pd-status-banner { padding: 0.5rem 0.75rem; border-inline-start: 4px solid var(--sl-color-orange); background: var(--sl-color-orange-low); }
+.pd-status-banner[data-status='withdrawn'], .pd-status-banner[data-status='superseded'] { border-color: var(--sl-color-red); background: var(--sl-color-red-low); }
+.pd-panel, .pd-declaration, .pd-prompt, .pd-evidence, .pd-claim { border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.75rem 1rem; }
+.pd-prompt pre { white-space: pre-wrap; }
+.pd-copy { cursor: pointer; }
+.pd-caution { font-style: italic; }
+.pd-index { list-style: none; padding: 0; }
+.pd-index li + li { margin-top: 1rem; }
+.pd-layers ol { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; list-style: decimal inside; padding: 0; }

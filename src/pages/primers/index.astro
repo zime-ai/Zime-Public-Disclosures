@@ -1,0 +1,8 @@
+---
+import ArtifactIndex from '../../components/ArtifactIndex.astro';
+import { getArtifacts } from '../../utils/content';
+
+const entries = await getArtifacts('primers');
+---
+
+<ArtifactIndex title="Interactive Primers" intro="Progressive explanations of complex disclosures: orient, understand, evaluate, interrogate, act." entries={entries} />

@@ -1,0 +1,37 @@
+---
+// Progressive layers: Orient, Understand, Evaluate, Interrogate, Act (Hand-Off Kit §11).
+// Authors write each layer as an H2 in the Markdown body; the layer nav links to them.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import DisclosureMeta from '../components/DisclosureMeta.astro';
+import PrimerDiagram from '../components/PrimerDiagram.astro';
+import RelatedArtifacts from '../components/RelatedArtifacts.astro';
+import VersionHistory from '../components/VersionHistory.astro';
+import PrinciplesDeclaration from '../components/PrinciplesDeclaration.astro';
+import { getAllArtifacts, type Artifact } from '../utils/content';
+import { relatedGroups } from '../utils/relationships';
+import { versionEvents } from '../utils/versions';
+import { jsonLdHead } from '../utils/jsonld';
+
+interface Props {
+	entry: Artifact;
+}
+const { entry } = Astro.props;
+const d = entry.data as Artifact['data'] & {
+	visuals?: { asset_id: string; src?: string; alt: string; caption?: string; notes?: string }[];
+};
+const all = await getAllArtifacts();
+const layers = ['Orient', 'Understand', 'Evaluate', 'Interrogate', 'Act'];
+---
+
+<StarlightPage frontmatter={{ title: d.title, description: d.summary, head: jsonLdHead(entry, Astro.site) }}>
+	<p class="pd-summary">{d.summary}</p>
+	<nav class="pd-layers" aria-label="Primer layers">
+		<ol>{layers.map((l) => <li><a href={`#${l.toLowerCase()}`}>{l}</a></li>)}</ol>
+	</nav>
+	<DisclosureMeta entry={entry} />
+	{d.visuals?.filter((v) => v.src).map((v) => <PrimerDiagram src={v.src!} alt={v.alt} caption={v.caption} notes={v.notes} />)}
+	<slot />
+	<RelatedArtifacts groups={relatedGroups(entry, all)} />
+	<VersionHistory events={versionEvents(entry, all)} />
+	<PrinciplesDeclaration principlesVersion={d.principles_version} status={d.status} />
+</StarlightPage>

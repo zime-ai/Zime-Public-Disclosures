@@ -1,0 +1,26 @@
+---
+// Glossary entries (75 to 250 words) and Thesaurus monographs (Report, Concept Spine).
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import RelatedArtifacts from '../components/RelatedArtifacts.astro';
+import VersionHistory from '../components/VersionHistory.astro';
+import { getAllArtifacts, formatDate, type Artifact } from '../utils/content';
+import { relatedGroups } from '../utils/relationships';
+import { versionEvents } from '../utils/versions';
+import { jsonLdHead } from '../utils/jsonld';
+
+interface Props {
+	entry: Artifact;
+}
+const { entry } = Astro.props;
+const d = entry.data as Extract<Artifact['data'], { artifact_type: 'concept' }>;
+const all = await getAllArtifacts();
+---
+
+<StarlightPage frontmatter={{ title: d.title, description: d.summary, head: jsonLdHead(entry, Astro.site) }}>
+	<p class="pd-summary">{d.summary}</p>
+	{d.aliases.length > 0 && <p class="pd-small">Also known as: {d.aliases.join(', ')}</p>}
+	<p class="pd-small">{d.concept_type} · v{d.version} · reviewed by {formatDate(d.review_by)}</p>
+	<slot />
+	<RelatedArtifacts groups={relatedGroups(entry, all)} />
+	<VersionHistory events={versionEvents(entry, all)} />
+</StarlightPage>

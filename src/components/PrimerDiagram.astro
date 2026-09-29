@@ -1,0 +1,17 @@
+---
+// Explanatory visual with caption, alt text and source or assumption notes.
+// The diagram must explain a mechanism, not decorate (Report, "Interactive Primer").
+interface Props {
+	src: string;
+	alt: string;
+	caption?: string;
+	notes?: string;
+}
+const { src, alt, caption, notes } = Astro.props;
+---
+
+<figure class="pd-diagram">
+	<img src={src} alt={alt} loading="lazy" />
+	{caption && <figcaption>{caption}</figcaption>}
+	{notes && <p class="pd-small">Sources and assumptions: {notes}</p>}
+</figure>

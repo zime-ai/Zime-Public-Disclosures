@@ -1,0 +1,27 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { formatDate, type Artifact } from '../utils/content';
+
+interface Props {
+	title: string;
+	intro: string;
+	entries: Artifact[];
+	empty?: string;
+}
+const { title, intro, entries, empty = 'Nothing published here yet.' } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title, description: intro }}>
+	<p>{intro}</p>
+	{entries.length === 0 ? <p class="pd-small">{empty}</p> : (
+		<ul class="pd-index">
+			{entries.map((e) => (
+				<li>
+					<a href={e.data.canonical_path}>{e.data.title}</a>
+					<span class="pd-small"> · {formatDate(e.data.updated_date ?? e.data.publication_date)} · v{e.data.version}{e.data.status !== 'published' ? ` · ${e.data.status}` : ''}</span>
+					<p>{e.data.summary}</p>
+				</li>
+			))}
+		</ul>
+	)}
+</StarlightPage>

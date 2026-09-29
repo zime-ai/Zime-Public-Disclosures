@@ -1,0 +1,21 @@
+---
+// Compact Generative Trust declaration. Never claim legal compliance, certification,
+// guaranteed accuracy or guaranteed AI citation (Report, "Public declaration").
+interface Props {
+	principlesVersion?: string;
+	status: string;
+}
+const { principlesVersion, status } = Astro.props;
+---
+
+{principlesVersion && (
+	<aside class="pd-declaration" aria-label="Generative Trust Declaration">
+		<p>
+			<strong>Generative Trust Declaration.</strong> This artifact was produced under the {principlesVersion}. It
+			identifies the declaring party, distinguishes facts from interpretations and future propositions, provides
+			evidence and inquiry pathways, states material qualifications, and may be amended, corrected, or superseded
+			as new information becomes available.
+		</p>
+		<p class="pd-small">Status: {status.replace(/_/g, ' ')}. <a href="/corrections/">How corrections work</a>.</p>
+	</aside>
+)}

@@ -1,0 +1,13 @@
+---
+import { render } from 'astro:content';
+import DisclosureLayout from '../../layouts/DisclosureLayout.astro';
+import { getArtifacts, routeParams } from '../../utils/content';
+
+export async function getStaticPaths() {
+	return (await getArtifacts('reference')).map(routeParams);
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<DisclosureLayout entry={entry}><Content /></DisclosureLayout>

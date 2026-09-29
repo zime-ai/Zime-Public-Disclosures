@@ -1,0 +1,8 @@
+---
+import ArtifactIndex from '../../../components/ArtifactIndex.astro';
+import { getArtifacts } from '../../../utils/content';
+
+const entries = (await getArtifacts('concepts')).filter((e) => e.data.concept_type === 'thesaurus');
+---
+
+<ArtifactIndex title="Thesaurus" intro="Longer monographs on load-bearing concepts and contested distinctions." entries={entries} />

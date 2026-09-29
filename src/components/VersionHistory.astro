@@ -1,0 +1,22 @@
+---
+import type { VersionEvent } from '../utils/versions';
+
+interface Props {
+	events: VersionEvent[];
+}
+const { events } = Astro.props;
+---
+
+{events.length > 0 && (
+	<section class="pd-versions" aria-labelledby="pd-versions-h">
+		<h2 id="pd-versions-h">Version history</h2>
+		<ol>
+			{events.map((e) => (
+				<li>
+					{e.href ? <a href={e.href}>{e.label}</a> : e.label}
+					{e.date && <span class="pd-small"> · {e.date}</span>}
+				</li>
+			))}
+		</ol>
+	</section>
+)}

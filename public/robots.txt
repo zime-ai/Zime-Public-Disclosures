@@ -1,0 +1,18 @@
+# Zime Public Disclosures is written to be read by people and by AI research agents.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Add once the canonical domain is final (DEF-003):
+# Sitemap: https://<canonical-domain>/sitemap-index.xml

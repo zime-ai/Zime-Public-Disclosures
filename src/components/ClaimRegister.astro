@@ -1,0 +1,41 @@
+---
+interface Claim {
+	claim_id: string;
+	statement: string;
+	claim_type: string;
+	status: string;
+	scope: string;
+	evidence_paths: string[];
+	confirmation_conditions: string[];
+	disconfirmation_conditions: string[];
+	independent_references: string[];
+}
+interface Props {
+	claims: Claim[];
+}
+const { claims } = Astro.props;
+const list = (items: string[]) => (items.length ? items : ['None recorded yet.']);
+---
+
+<section class="pd-claims" aria-labelledby="pd-claims-h">
+	<h2 id="pd-claims-h">Claim register</h2>
+	{claims.length === 0 && <p>No claims registered yet.</p>}
+	{claims.map((c) => (
+		<article class="pd-claim" id={c.claim_id}>
+			<h3><code>{c.claim_id}</code> {c.statement}</h3>
+			<dl>
+				<dt>Claim type</dt><dd>{c.claim_type.replace(/_/g, ' ')}</dd>
+				<dt>Status</dt><dd>{c.status}</dd>
+				<dt>Scope</dt><dd>{c.scope}</dd>
+			</dl>
+			<h4>Evidence paths</h4>
+			<ul>{list(c.evidence_paths).map((e) => <li>{e.startsWith('http') || e.startsWith('/') ? <a href={e}>{e}</a> : e}</li>)}</ul>
+			<h4>Would confirm</h4>
+			<ul>{list(c.confirmation_conditions).map((e) => <li>{e}</li>)}</ul>
+			<h4>Would disconfirm</h4>
+			<ul>{list(c.disconfirmation_conditions).map((e) => <li>{e}</li>)}</ul>
+			<h4>Independent references</h4>
+			<ul>{list(c.independent_references).map((e) => <li>{e}</li>)}</ul>
+		</article>
+	))}
+</section>

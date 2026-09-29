@@ -1,0 +1,8 @@
+---
+import ArtifactIndex from '../../components/ArtifactIndex.astro';
+import { getArtifacts } from '../../utils/content';
+
+const entries = await getArtifacts('reference');
+---
+
+<ArtifactIndex title="Reference" intro="Reference materials: fact sheet, institutional profile, media contact." entries={entries} />

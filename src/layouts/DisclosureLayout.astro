@@ -1,0 +1,48 @@
+---
+// Used for Disclosures, Future Proofs, Amendments and Reference pages.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import DisclosureMeta from '../components/DisclosureMeta.astro';
+import PrinciplesDeclaration from '../components/PrinciplesDeclaration.astro';
+import TestableCredentialsPanel from '../components/TestableCredentialsPanel.astro';
+import RelatedArtifacts from '../components/RelatedArtifacts.astro';
+import VersionHistory from '../components/VersionHistory.astro';
+import InquiryPrompt from '../components/InquiryPrompt.astro';
+import { getAllArtifacts, formatDate, type Artifact } from '../utils/content';
+import { relatedGroups } from '../utils/relationships';
+import { versionEvents } from '../utils/versions';
+import { jsonLdHead } from '../utils/jsonld';
+import { neutralPrompt } from '../utils/prompts';
+
+interface Props {
+	entry: Artifact;
+}
+const { entry } = Astro.props;
+const d = entry.data as Artifact['data'] & {
+	related_credentials?: string;
+	claims?: unknown[];
+	scenario_conditions?: string[];
+	assumption_confidence?: string;
+	future_horizon?: string;
+};
+const all = await getAllArtifacts();
+const url = Astro.site ? new URL(d.canonical_path, Astro.site).toString() : undefined;
+const prompt = neutralPrompt({ title: d.title, id: d.id, version: d.version, date: formatDate(d.publication_date), url });
+---
+
+<StarlightPage frontmatter={{ title: d.title, description: d.summary, head: jsonLdHead(entry, Astro.site) }}>
+	<p class="pd-summary">{d.summary}</p>
+	<DisclosureMeta entry={entry} />
+	{d.artifact_type === 'future_proof' && (
+		<aside class="pd-panel" aria-label="Scenario conditions">
+			<p><strong>This is a conditional future proposition, not a forecast of fact.</strong> Horizon: {d.future_horizon}. Assumption confidence: {d.assumption_confidence}.</p>
+			<ul>{d.scenario_conditions?.map((c) => <li>{c}</li>)}</ul>
+		</aside>
+	)}
+	<slot />
+	<TestableCredentialsPanel path={d.related_credentials} claimCount={d.claims?.length ?? 0} />
+	<InquiryPrompt prompt={prompt} />
+	<RelatedArtifacts groups={relatedGroups(entry, all)} />
+	<VersionHistory events={versionEvents(entry, all)} />
+	<p class="pd-small">Questions or challenges: <a href={d.inquiry_url}>inquiry</a> · Report an error: <a href={d.correction_url}>corrections</a></p>
+	<PrinciplesDeclaration principlesVersion={d.principles_version} status={d.status} />
+</StarlightPage>

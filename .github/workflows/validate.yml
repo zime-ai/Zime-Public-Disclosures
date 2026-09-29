@@ -1,0 +1,23 @@
+name: Validate Public Disclosures
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # lifecycle-transition checks compare against origin/main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:content
+        env:
+          BASE_REF: origin/main
+      - run: npm run validate:relationships
+      - run: npm run validate:public-boundary

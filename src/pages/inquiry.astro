@@ -1,0 +1,13 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+const issues = 'https://github.com/zime-ai/Zime-Public-Disclosures/issues/new';
+---
+
+<StarlightPage frontmatter={{ title: 'Inquiry', description: 'Ask a question about, or challenge, a Zime Public Disclosure.' }}>
+	<p>Every disclosure here can be questioned or challenged. Tell us which artifact (its ID and version), what you want to know or dispute, and any source we should look at.</p>
+	<ul>
+		<li><a href={`${issues}?labels=inquiry&title=Inquiry:%20`}>Open an inquiry on GitHub</a></li>
+	</ul>
+	<p class="pd-small">A named person at Zime reviews each inquiry. Disagreement is treated as information, not as a messaging problem.</p>
+</StarlightPage>

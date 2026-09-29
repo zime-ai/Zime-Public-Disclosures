@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/zime-ai/Zime-Public-Disclosures/schemas/manifest.schema.json",
+  "title": "Publication Manifest",
+  "description": "Shape of public/publication-manifest.json written by scripts/build-manifest.mjs.",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "artifacts"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "build_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deployment": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string"
+        },
+        "deployment_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "environment": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "artifact_id",
+          "source_path",
+          "source_version",
+          "content_hash",
+          "canonical_url",
+          "publication_status"
+        ],
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": "string"
+          },
+          "source_commit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_version": {
+            "type": "string"
+          },
+          "content_hash": {
+            "type": "string",
+            "pattern": "^sha256:[0-9a-f]{64}$"
+          },
+          "canonical_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publication_status": {
+            "enum": [
+              "published",
+              "amended",
+              "superseded",
+              "withdrawn"
+            ]
+          },
+          "accountable_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "principles_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "related_credentials": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cms_item_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Set after publishing to zime.ai/press (CMS reconciliation)."
+          },
+          "cms_revision": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
