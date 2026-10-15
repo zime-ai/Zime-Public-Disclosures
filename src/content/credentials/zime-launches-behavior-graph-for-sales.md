@@ -3,7 +3,7 @@ id: "ZIME-CRED-2026-001"
 title: "Testable Credentials: Zime Launches Behavior Graph for Sales"
 summary: "Claims, evidence paths, qualifications, inquiry prompts, and revision information for the associated Disclosure."
 artifact_type: testable_credentials
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
@@ -52,7 +52,7 @@ claims:
       - "Behaviors are shown without conditions, evidence, source or version, are not delivered during calls, or execution is not attributable to individual reps."
     independent_references: []
   - claim_id: CLM-ZIME-004
-    statement: "Adoption here means reps run the behavior in live deals, not that they log in. In Zime's own benchmark, adoption reaches 80% of eligible reps within 90 days."
+    statement: "In Zime's own benchmark, adoption reaches 80% of eligible reps within 90 days. Zime counts adoption as reps running a behavior in a live deal, not logging in."
     claim_type: verified_fact
     status: qualified
     scope: "Zime's own benchmark, not an independent measurement. Adoption is defined as reps running the behavior in live deals, not logging in. Customer cohort, measurement period and the definition of 'eligible' are not stated in the release."
@@ -63,16 +63,16 @@ claims:
       - "The figure comes from a single customer or a selected subset, or 'running a behavior' is measured by activity short of executing it in a live deal."
     independent_references: []
   - claim_id: CLM-ZIME-005
-    statement: "HFS Research covered Zime in its 2026 Services-as-Software Hot Tech report."
+    statement: "HFS Research selected Zime as an HFS Services-as-Software Hot Tech in July 2026."
     claim_type: institutional_fact
     status: qualified
-    scope: "Coverage in an analyst report, as named by HFS Research."
+    scope: "Selection as named by HFS Research. The HFS page for Zime is dated July 8, 2026."
     evidence_paths:
       - "https://www.hfsresearch.com/research/hfs-services-as-software-hot-tech-zime/"
     confirmation_conditions:
-      - "The HFS Research 2026 Services-as-Software Hot Tech report includes Zime."
+      - "HFS Research lists Zime as an HFS Services-as-Software Hot Tech."
     disconfirmation_conditions:
-      - "The report does not include Zime, or covers it under a different name or year."
+      - "HFS Research does not list Zime as a Services-as-Software Hot Tech, or lists it under a different name or date."
     independent_references: []
   - claim_id: CLM-ZIME-006
     statement: "Zime was named Startup of the Year at SaaStr Annual 2026."
@@ -126,4 +126,4 @@ Reps running the behavior in live deals, not logging in. The figure is from Zime
 
 - This is a voluntary commercial disclosure. Zime has a commercial interest in the product and the category it describes.
 - The adoption figure is a Zime benchmark. Its cohort and period are not stated in the release.
-- Analyst coverage and awards are as named by HFS Research and SaaStr. Check each body's own listing.
+- Analyst selections and awards are as named by HFS Research and SaaStr. Check each body's own listing.
