@@ -3,7 +3,7 @@ id: "ZIME-PRIMER-2026-001"
 title: "Interactive Primer: Behavior Graph for Sales"
 summary: "What Behavior Graph for Sales is, how it differs from a context graph, and how to evaluate Zime's claims about it."
 artifact_type: interactive_primer
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
@@ -44,7 +44,7 @@ Key entities: Zime, Behavior Graph for Sales.
 - **What each behavior carries.** Conditions, evidence, source and version, so leaders can trace the move back to the strategy and the people behind it.
 - **Delivery and measurement.** Reps get the behavior in their workflow, including during the call. Leaders see which reps ran which behavior, and what happened to the deal next.
 - **Reported adoption.** In Zime's own benchmark, 80% of eligible reps run behaviors in live deals within 90 days. See its scope in the [Testable Credentials](/credentials/zime-launches-behavior-graph-for-sales/).
-- **Recognition.** HFS Research covered Zime in its 2026 Services-as-Software Hot Tech report. Zime was named Startup of the Year at SaaStr Annual 2026.
+- **Recognition.** HFS Research selected Zime as an HFS Services-as-Software Hot Tech in July 2026, and Zime was named Startup of the Year at SaaStr Annual 2026.
 
 ## Interrogate
 
