@@ -71,7 +71,7 @@ Each behavior it produces is the move to run for a role, product, stage and comp
 
 > "A strategy only works if reps run it, and the move that runs it was never written down. Behavior Graph for Sales encodes what your best reps know, including what never shows up in a transcript, puts that move in each rep's workflow, and shows you who ran it. When a quarter misses, you can tell whether the strategy was wrong or never ran," said Sanchit Garg, Founder and CEO of Zime.
 
-Adoption here means reps run the behavior in live deals, not that they log in. In Zime's own benchmark, adoption reaches 80% of eligible reps within 90 days. HFS Research covered Zime in its 2026 Services-as-Software Hot Tech report. Zime was named Startup of the Year at SaaStr Annual 2026.
+Adoption here means reps run the behavior in live deals, not that they log in. In Zime's own benchmark, adoption reaches 80% of eligible reps within 90 days. HFS Research covered Zime in its [2026 Services-as-Software Hot Tech report](https://www.hfsresearch.com/research/hfs-services-as-software-hot-tech-zime/). Zime was named [Startup of the Year at SaaStr Annual 2026](https://zime.ai/zime-wins-startup-of-the-year-saastr-2026).
 
 ## About Zime
 

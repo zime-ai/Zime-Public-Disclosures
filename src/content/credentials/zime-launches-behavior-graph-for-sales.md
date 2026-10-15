@@ -67,7 +67,8 @@ claims:
     claim_type: institutional_fact
     status: qualified
     scope: "Coverage in an analyst report, as named by HFS Research."
-    evidence_paths: []
+    evidence_paths:
+      - "https://www.hfsresearch.com/research/hfs-services-as-software-hot-tech-zime/"
     confirmation_conditions:
       - "The HFS Research 2026 Services-as-Software Hot Tech report includes Zime."
     disconfirmation_conditions:
@@ -77,8 +78,9 @@ claims:
     statement: "Zime was named Startup of the Year at SaaStr Annual 2026."
     claim_type: institutional_fact
     status: qualified
-    scope: "Recognition as named by SaaStr."
-    evidence_paths: []
+    scope: "Recognition as named by SaaStr. The evidence path is Zime's own announcement, not a SaaStr listing."
+    evidence_paths:
+      - "https://zime.ai/zime-wins-startup-of-the-year-saastr-2026"
     confirmation_conditions:
       - "SaaStr lists Zime as Startup of the Year at SaaStr Annual 2026."
     disconfirmation_conditions:
