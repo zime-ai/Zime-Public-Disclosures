@@ -3,7 +3,7 @@ id: "ZIME-CRED-2026-001"
 title: "Testable Credentials: Zime Launches Behavior Graph for Sales"
 summary: "Claims, evidence paths, qualifications, inquiry prompts, and revision information for the associated Disclosure."
 artifact_type: testable_credentials
-status: approved
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
