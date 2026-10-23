@@ -3,7 +3,7 @@ id: "ZIME-CRED-2026-002"
 title: "Testable Credentials: Zime Launches Enterprise Sales Harness"
 summary: "Claims, evidence paths, qualifications, inquiry prompts, and revision information for the associated Disclosure."
 artifact_type: testable_credentials
-status: under_review
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"

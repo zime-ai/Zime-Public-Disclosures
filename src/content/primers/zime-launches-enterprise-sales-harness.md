@@ -3,7 +3,7 @@ id: "ZIME-PRIMER-2026-002"
 title: "Interactive Primer: Zime Enterprise Sales Harness"
 summary: "What the Zime Enterprise Sales Harness is, how it works alongside harnesses teams build themselves, and how to evaluate Zime's claims about it."
 artifact_type: interactive_primer
-status: under_review
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"

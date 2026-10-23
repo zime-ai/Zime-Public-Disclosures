@@ -4,7 +4,7 @@ title: "Zime Launches Enterprise Sales Harness to Keep Sales Agents Current and 
 summary: "DevOps for RevOps for engineers who built their own sales agents: one hub versions every skill their harnesses run."
 artifact_type: disclosure
 subtype: product
-status: under_review
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
@@ -75,7 +75,7 @@ related_entities:
 ai_assistance:
   used: true
   roles: [structure, formatting, validation_assistance]
-  human_review: required
+  human_review: completed
 structured_data_type: NewsArticle
 ---
 
