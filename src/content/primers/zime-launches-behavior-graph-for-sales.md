@@ -3,7 +3,7 @@ id: "ZIME-PRIMER-2026-001"
 title: "Interactive Primer: Behavior Graph for Sales"
 summary: "What Behavior Graph for Sales is, how it differs from a context graph, and how to evaluate Zime's claims about it."
 artifact_type: interactive_primer
-status: approved
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"

@@ -4,7 +4,7 @@ title: "Zime Launches Behavior Graph for Sales So Reps Run CRO Strategy"
 summary: "Behavioral AI for Sales Execution encodes the best reps' judgment and the CRO's strategy as behaviors every rep can run."
 artifact_type: disclosure
 subtype: product
-status: approved
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
