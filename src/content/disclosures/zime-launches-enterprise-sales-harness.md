@@ -79,7 +79,7 @@ ai_assistance:
 structured_data_type: NewsArticle
 ---
 
-**Palo Alto, US, October 23, 2026.** Zime, the Behavioral AI for Sales Execution company, today launched the Zime Enterprise Sales Harness, which keeps a revenue team's in-house go-to-market agents current with strategy, products and competitors by shipping sales behaviors as versioned skills that are tested, released and rolled back.
+**Palo Alto, California, October 23, 2026.** Zime, the Behavioral AI for Sales Execution company, today launched the Zime Enterprise Sales Harness, which keeps a revenue team's in-house go-to-market agents current with strategy, products and competitors by shipping sales behaviors as versioned skills that are tested, released and rolled back.
 
 Details: [zime.ai/products/enterprise-harness](https://zime.ai/products/enterprise-harness)
 
