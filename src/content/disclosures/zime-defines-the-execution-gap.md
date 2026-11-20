@@ -117,7 +117,7 @@ Zime brings Behavioral AI to sales execution: repeatable behaviors that win. Zim
 
 ## Additional resources
 
-Release, fact sheet, and evidence for this announcement: [zime.ai/disclosures/zime-defines-the-execution-gap/](https://zime.ai/disclosures/zime-defines-the-execution-gap/). Fact sheet: [/reference/zime-defines-the-execution-gap-fact-sheet/](/reference/zime-defines-the-execution-gap-fact-sheet/). Claims and evidence: [/credentials/zime-defines-the-execution-gap/](/credentials/zime-defines-the-execution-gap/). Background: [/primers/cro-strategy-to-execution-gap/](/primers/cro-strategy-to-execution-gap/).
+Fact sheet: [/reference/zime-defines-the-execution-gap-fact-sheet/](/reference/zime-defines-the-execution-gap-fact-sheet/). Claims and evidence: [/credentials/zime-defines-the-execution-gap/](/credentials/zime-defines-the-execution-gap/). Background: [/primers/cro-strategy-to-execution-gap/](/primers/cro-strategy-to-execution-gap/).
 
 ## Contact
 
