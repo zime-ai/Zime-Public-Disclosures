@@ -65,13 +65,12 @@ claims:
     claim_type: offer
     public_status: qualified
     credentials_path: "/credentials/zime-launches-enterprise-sales-harness-execution-gap/"
-related_primer: "/primers/zime-launches-enterprise-sales-harness/"
+supersedes: "ZIME-DISC-2026-002"
 related_credentials: "/credentials/zime-launches-enterprise-sales-harness-execution-gap/"
 related_artifacts:
   - "/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/"
   - "/disclosures/zime-launches-enterprise-sales-harness/"
   - "/disclosures/zime-defines-the-execution-gap/"
-  - "/primers/zime-launches-enterprise-sales-harness/"
 related_concepts:
   - "/concepts/glossary/execution-gap/"
 related_entities:
@@ -121,7 +120,7 @@ Zime brings Behavioral AI to sales execution: repeatable behaviors that win. Zim
 
 ## Additional resources
 
-Fact sheet: [/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/](/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/). Claims and evidence: [/credentials/zime-launches-enterprise-sales-harness-execution-gap/](/credentials/zime-launches-enterprise-sales-harness-execution-gap/). Background: [/primers/zime-launches-enterprise-sales-harness/](/primers/zime-launches-enterprise-sales-harness/). Related release: [Zime Defines the Sales Execution Gap](/disclosures/zime-defines-the-execution-gap/) (November 19, 2026).
+Fact sheet: [/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/](/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/). Claims and evidence: [/credentials/zime-launches-enterprise-sales-harness-execution-gap/](/credentials/zime-launches-enterprise-sales-harness-execution-gap/). Earlier release, now superseded: [/disclosures/zime-launches-enterprise-sales-harness/](/disclosures/zime-launches-enterprise-sales-harness/) (October 23, 2026). Related release: [Zime Defines the Sales Execution Gap](/disclosures/zime-defines-the-execution-gap/) (November 19, 2026).
 
 ## Contact
 

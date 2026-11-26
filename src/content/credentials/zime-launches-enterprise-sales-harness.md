@@ -3,15 +3,15 @@ id: "ZIME-CRED-2026-002"
 title: "Testable Credentials: Zime Launches Enterprise Sales Harness"
 summary: "Claims, evidence paths, qualifications, inquiry prompts, and revision information for the associated Disclosure."
 artifact_type: testable_credentials
-status: published
+status: superseded
 visibility: public
-version: "0.1"
+version: "0.2"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
 declaring_party:
   name: Zime
   entity_id: ENT-ZIME-001
 publication_date: 2026-10-23
-updated_date: 2026-10-23
+updated_date: 2026-11-26
 review_by: 2026-11-23
 canonical_path: "/credentials/zime-launches-enterprise-sales-harness/"
 for_artifact: "ZIME-DISC-2026-002"
@@ -155,7 +155,10 @@ prompt_sets:
   - persona: gtm_engineer
     prompt: "Based on Zime's public description, how would the Enterprise Sales Harness interact with MCP servers, agents and skills your team already built? What failure modes, data residency and rollback cases should you test?"
 revision_record: []
+superseded_by: "ZIME-CRED-2026-010"
 ---
+
+> **Superseded on November 26, 2026** by [ZIME-CRED-2026-010](/credentials/zime-launches-enterprise-sales-harness-execution-gap/). This page is kept as published for the public record; see [/amendments/supersede-october-enterprise-sales-harness-release/](/amendments/supersede-october-enterprise-sales-harness-release/).
 
 ## What this page is
 

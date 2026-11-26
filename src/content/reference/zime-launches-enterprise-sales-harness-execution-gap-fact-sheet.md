@@ -18,7 +18,6 @@ canonical_path: "/reference/zime-launches-enterprise-sales-harness-execution-gap
 related_artifacts:
   - "/disclosures/zime-launches-enterprise-sales-harness-execution-gap/"
   - "/credentials/zime-launches-enterprise-sales-harness-execution-gap/"
-  - "/primers/zime-launches-enterprise-sales-harness/"
   - "/disclosures/zime-launches-enterprise-sales-harness/"
 related_concepts:
   - "/concepts/glossary/execution-gap/"

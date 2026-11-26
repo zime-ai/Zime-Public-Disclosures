@@ -15,12 +15,12 @@ updated_date: 2026-11-26
 review_by: 2026-12-26
 canonical_path: "/credentials/zime-launches-enterprise-sales-harness-execution-gap/"
 for_artifact: "ZIME-DISC-2026-004"
+supersedes: "ZIME-CRED-2026-002"
 related_artifacts:
   - "/disclosures/zime-launches-enterprise-sales-harness-execution-gap/"
   - "/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/"
   - "/disclosures/zime-launches-enterprise-sales-harness/"
   - "/credentials/zime-launches-enterprise-sales-harness/"
-  - "/primers/zime-launches-enterprise-sales-harness/"
   - "/disclosures/zime-defines-the-execution-gap/"
 related_concepts:
   - "/concepts/glossary/execution-gap/"
