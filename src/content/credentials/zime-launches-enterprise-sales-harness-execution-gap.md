@@ -30,7 +30,7 @@ related_claims:
 ai_assistance:
   used: true
   roles: [extraction, structure, drafting_assistance, formatting, validation_assistance]
-  human_review: required
+  human_review: completed
 claims:
   - claim_id: CLM-ZIME-077
     statement: "Zime, the Behavioral AI for Sales Execution company, today launched Zime Enterprise Sales Harness, a control plane that tests, versions and governs selling behaviors for every human seller and AI agent on an enterprise revenue team, and records what each use cost and produced."

@@ -79,7 +79,7 @@ related_entities:
 ai_assistance:
   used: true
   roles: [structure, drafting_assistance, formatting, validation_assistance]
-  human_review: required
+  human_review: completed
 structured_data_type: NewsArticle
 ---
 

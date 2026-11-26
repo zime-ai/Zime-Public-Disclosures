@@ -27,7 +27,7 @@ related_entities:
 ai_assistance:
   used: true
   roles: [extraction, structure, formatting]
-  human_review: required
+  human_review: completed
 structured_data_type: Article
 ---
 
