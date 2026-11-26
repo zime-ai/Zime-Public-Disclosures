@@ -120,7 +120,7 @@ Zime brings Behavioral AI to sales execution: repeatable behaviors that win. Zim
 
 ## Additional resources
 
-Fact sheet: [/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/](/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet/). Claims and evidence: [/credentials/zime-launches-enterprise-sales-harness-execution-gap/](/credentials/zime-launches-enterprise-sales-harness-execution-gap/). Earlier release, now superseded: [/disclosures/zime-launches-enterprise-sales-harness/](/disclosures/zime-launches-enterprise-sales-harness/) (October 23, 2026). Related release: [Zime Defines the Sales Execution Gap](/disclosures/zime-defines-the-execution-gap/) (November 19, 2026).
+Fact sheet: [Zime Enterprise Sales Harness: Fact Sheet](https://github.com/zime-ai/Zime-Public-Disclosures/blob/main/src/content/reference/zime-launches-enterprise-sales-harness-execution-gap-fact-sheet.md). Claims and evidence: [Testable Credentials](https://github.com/zime-ai/Zime-Public-Disclosures/blob/main/src/content/credentials/zime-launches-enterprise-sales-harness-execution-gap.md). Earlier release, now superseded: [Zime Launches Enterprise Sales Harness](https://github.com/zime-ai/Zime-Public-Disclosures/blob/main/src/content/disclosures/zime-launches-enterprise-sales-harness.md) (October 23, 2026). Related release: [Zime Defines the Sales Execution Gap](https://github.com/zime-ai/Zime-Public-Disclosures/blob/main/src/content/disclosures/zime-defines-the-execution-gap.md) (November 19, 2026).
 
 ## Contact
 
