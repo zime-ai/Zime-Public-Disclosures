@@ -3,7 +3,7 @@ id: "ZIME-REF-2026-001"
 title: "Fact Sheet: Zime Defines the Execution Gap"
 summary: "Key facts for the November 19, 2026 Zime disclosure defining the Execution Gap: what was announced, for whom, the claims made and where each can be checked."
 artifact_type: reference
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 declaring_party:
@@ -12,7 +12,7 @@ declaring_party:
 accountable_owner:
   role: "Publisher"
 publication_date: 2026-11-19
-updated_date: 2026-11-20
+updated_date: 2026-11-26
 review_by: 2026-12-19
 canonical_path: "/reference/zime-defines-the-execution-gap-fact-sheet/"
 related_artifacts:

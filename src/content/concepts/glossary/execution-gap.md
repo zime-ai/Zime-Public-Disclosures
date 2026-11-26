@@ -4,14 +4,14 @@ title: "Execution Gap"
 summary: "The distance between AI usage on a sales team and the chief revenue officer's strategy running in live deals."
 artifact_type: concept
 concept_type: glossary
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 declaring_party:
   name: Zime
   entity_id: ENT-ZIME-001
 publication_date: 2026-11-19
-updated_date: 2026-11-20
+updated_date: 2026-11-26
 review_by: 2027-02-19
 canonical_path: "/concepts/glossary/execution-gap/"
 aliases:

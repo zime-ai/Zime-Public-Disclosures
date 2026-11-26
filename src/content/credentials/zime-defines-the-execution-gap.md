@@ -3,7 +3,7 @@ id: "ZIME-CRED-2026-009"
 title: "Testable Credentials: Zime Defines the Execution Gap"
 summary: "Claims, evidence paths, qualifications, frequently asked questions and inquiry prompts for the Zime disclosure that defines the Execution Gap."
 artifact_type: testable_credentials
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
@@ -11,7 +11,7 @@ declaring_party:
   name: Zime
   entity_id: ENT-ZIME-001
 publication_date: 2026-11-19
-updated_date: 2026-11-20
+updated_date: 2026-11-26
 review_by: 2026-12-19
 canonical_path: "/credentials/zime-defines-the-execution-gap/"
 for_artifact: "ZIME-DISC-2026-003"
