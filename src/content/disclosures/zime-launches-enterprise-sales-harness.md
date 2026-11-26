@@ -4,9 +4,9 @@ title: "Zime Launches Enterprise Sales Harness to Keep Sales Agents Current and 
 summary: "DevOps for RevOps for engineers who built their own sales agents: one hub versions every skill their harnesses run."
 artifact_type: disclosure
 subtype: product
-status: published
+status: superseded
 visibility: public
-version: "0.1"
+version: "0.2"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
 declaring_party:
   name: Zime
@@ -16,7 +16,7 @@ accountable_owner:
   role: "Publisher"
 commercial_interest: "Zime sells the Zime Enterprise Sales Harness as an annual subscription priced per rep seat. Wider adoption of the product, and of the DevOps for RevOps discipline Zime describes, benefits Zime commercially."
 publication_date: 2026-10-23
-updated_date: 2026-10-23
+updated_date: 2026-11-26
 effective_date: 2026-10-23
 review_by: 2026-11-23
 canonical_path: "/disclosures/zime-launches-enterprise-sales-harness/"
@@ -77,7 +77,10 @@ ai_assistance:
   roles: [structure, formatting, validation_assistance]
   human_review: completed
 structured_data_type: NewsArticle
+superseded_by: "ZIME-DISC-2026-004"
 ---
+
+> **Superseded on November 26, 2026** by [ZIME-DISC-2026-004](/disclosures/zime-launches-enterprise-sales-harness-execution-gap/). This page is kept as published for the public record; see [/amendments/supersede-october-enterprise-sales-harness-release/](/amendments/supersede-october-enterprise-sales-harness-release/).
 
 **Palo Alto, California, October 23, 2026.** Zime, the Behavioral AI for Sales Execution company, today launched the Zime Enterprise Sales Harness, which keeps a revenue team's in-house go-to-market agents current with strategy, products and competitors by shipping sales behaviors as versioned skills that are tested, released and rolled back.
 

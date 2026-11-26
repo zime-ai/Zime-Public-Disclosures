@@ -12,15 +12,14 @@ declaring_party:
 accountable_owner:
   role: Marketing
 publication_date: 2026-11-05
-updated_date: 2026-11-05
+updated_date: 2026-11-26
 review_by: 2026-12-05
 canonical_path: "/reference/zime-buyers-guide-ai-engineers-enterprise-sales-harness/"
 related_artifacts:
   - "/reference/zime-buyers-guide-cro-sales-productivity/"
   - "/reference/zime-buyers-guide-technical-cro-make-or-buy/"
   - "/credentials/zime-buyers-guide-ai-engineers-enterprise-sales-harness/"
-  - "/disclosures/zime-launches-behavior-graph-for-sales/"
-  - "/disclosures/zime-launches-enterprise-sales-harness/"
+  - "/disclosures/zime-launches-enterprise-sales-harness-execution-gap/"
   - "https://zime.ai/primers/devops-for-revops"
 related_entities:
   - "ENT-ZIME-001"
@@ -725,5 +724,4 @@ This guide follows five zime.ai pages, all read on 26 October 2026. Tags in the 
 - [Zime Buyer's Guide for CROs](/reference/zime-buyers-guide-cro-sales-productivity/)
 - [Zime Buyer's Guide for Technical CROs and CTOs](/reference/zime-buyers-guide-technical-cro-make-or-buy/)
 - [DevOps for RevOps (zime.ai primer)](https://zime.ai/primers/devops-for-revops)
-- [Disclosure: Zime launches Behavior Graph for Sales](/disclosures/zime-launches-behavior-graph-for-sales/)
-- [Disclosure: Zime launches Enterprise Sales Harness](/disclosures/zime-launches-enterprise-sales-harness/)
+- [Disclosure: Zime launches the Enterprise Sales Harness](/disclosures/zime-launches-enterprise-sales-harness-execution-gap/)
