@@ -4,7 +4,7 @@ title: "Zime Defines the Sales Execution Gap: Revenue Leaders Measure Strategy E
 summary: "Copilots and call recorders reach most sales reps. Chief revenue officers still lack visibility into deal strategy execution. Zime measures execution through rep behaviors in live deals, not logins."
 artifact_type: disclosure
 subtype: category
-status: approved
+status: published
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
