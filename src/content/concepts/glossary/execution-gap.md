@@ -4,7 +4,7 @@ title: "Execution Gap"
 summary: "The distance between AI usage on a sales team and the chief revenue officer's strategy running in live deals."
 artifact_type: concept
 concept_type: glossary
-status: approved
+status: published
 visibility: public
 version: "0.1"
 declaring_party:
