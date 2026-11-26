@@ -4,7 +4,7 @@ title: "Zime Defines the Sales Execution Gap: Revenue Leaders Measure Strategy E
 summary: "Copilots and call recorders reach most sales reps. Chief revenue officers still lack visibility into deal strategy execution. Zime measures execution through rep behaviors in live deals, not logins."
 artifact_type: disclosure
 subtype: category
-status: under_review
+status: approved
 visibility: public
 version: "0.1"
 principles_version: "Eight Principles of Generative Trust, Proposed v0.1"
@@ -16,7 +16,7 @@ accountable_owner:
   role: "Publisher"
 commercial_interest: "Zime sells Behavior Graph for Sales, the product this release describes. Wider adoption of the Execution Gap framing, and of measuring sales execution through behaviors rather than tool usage, benefits Zime commercially. GISTICS, quoted in this release, advises Zime on research and messaging, and its CEO serves as Zime's chief marketing officer."
 publication_date: 2026-11-19
-updated_date: 2026-11-20
+updated_date: 2026-11-26
 effective_date: 2026-11-19
 review_by: 2026-12-19
 canonical_path: "/disclosures/zime-defines-the-execution-gap/"
